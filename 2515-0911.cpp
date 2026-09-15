@@ -39,7 +39,7 @@ using namespace std;
 class Solution {
 public:
     // 枚举每个等于 target 的下标，环形距离取左右较近的一边，再取全局最小。
-    int closetTarget(vector<string>& words, string target, int startIndex) {
+    int closestTarget(vector<string>& words, string target, int startIndex) {
         const int n = (int)words.size();
         int ans = n;
         for (int i = 0; i < n; ++i) {
